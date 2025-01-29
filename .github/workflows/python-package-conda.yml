@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    max-parallel: "5"
+    concurrency: "5"
 
     steps:
     - uses: actions/checkout@v4
